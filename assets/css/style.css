@@ -102,3 +102,15 @@ header {
     float: right;
     color: #D9D8D2;
 }
+
+/* Small screens */
+
+@media(max-width: 530px) {
+    .choice {
+        font-size: 40px;
+    }
+    header {
+        font-size: 10px;
+    }
+}
+
