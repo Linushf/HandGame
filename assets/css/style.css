@@ -1,0 +1,101 @@
+/* Global style */
+
+* {
+    font-family: rock salt, sans-serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Body */
+
+body {
+    background-color: #40282C;
+}
+
+/* Heading */
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #D9D8D2;
+    color: #40282C;
+}
+
+/* Result text area */
+
+.result-text {
+    text-align: center;
+    margin-top: 50px;
+    color: #D9D8D2;
+}
+
+/* Chioces */
+
+.choices {
+    text-align: center;
+    color: #D9D8D2;
+}
+
+.choice {
+    display: inline-block;
+    font-size: 90px;
+    padding: 20px;
+}
+
+#rock:hover, #paper:hover, #scissors:hover {
+    cursor: pointer;
+    color: #7C96A6;
+}
+
+/* Separator line */
+
+#separator-line {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+/* Score area */
+
+.score-area {
+    margin: 25px auto;
+    text-align: center;
+    color: #D9D8D2;
+}
+
+#user-chioce, #user-avatar, #score-holder, #mysterion-chioce, #mysterion-avatar {
+    display: inline-block;
+    font-size: 40px;
+}
+
+#user-avatar, #user-chioce {
+    color: #7C96A6;
+}
+
+#mysterion-avatar, #mysterion-chioce {
+    color: red;
+}
+
+
+/* Reset button */
+
+#reset {
+    text-align: center;
+    padding: 15px 15px;
+}
+
+#reset-buttom:hover {
+    background-color: #8C5B49;
+    cursor: pointer;
+}
+
+/* Rules  */
+
+#question-sign {
+    float: right;
+    color: #D9D8D2;
+}
