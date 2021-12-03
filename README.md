@@ -1,6 +1,6 @@
 # HandGame
 
-[Veiw the project here](https://linushf.github.io/bio-resume/)
+[Veiw the project here](https://linushf.github.io/HandGame/)
 
 ## Table of contents
 * [General info & Purpose](#general-info)
@@ -8,11 +8,12 @@
 * [Features](#features)
 * [Technologies](#technologies)
 * [Testing](#testing)
-* [Wireframes)(#wireframes)
 * [Credit](#credit)
 
 
 ## General info
+
+The purpose of this site is to create a easy and well coded game in JavaScript. The HTML and CSS is easy to read and understand. The game itself is a widely know hand game called "Rock, paper, Scissors". The game is very easy to understand, you pick one hand sign of rock paper or scissors and show your opponent at the same time. Rock beats scissos, scissors beats paper, paper beats rock.
 
 This page is a milestone project to become a Full Stack Developer. The course is provided by [Code Inistitute](https://codeinstitute.net/).
 
@@ -21,6 +22,7 @@ This page is a milestone project to become a Full Stack Developer. The course is
 ## User Stories
 
 As a player I want to access the game easyly so this game is created as a One-Click game with scoreboard. I want the game to be recognizeable and easy to understand. 
+
 - __Balsamiq__
     - In the start up/planning process I used balsamiq to create wireframes
 ![wireframes](assets/images/.png "Wireframes created in Balsamiq")
@@ -40,6 +42,13 @@ The features on this page are coded in a way so the user can access all features
 
     The landing page is the main game page. Easy access and ready to play.
 
+### Future Features
+
+- __Highscore board__
+    To add more value to the user it would be cool to add a highscore list. In that case the user could submit their name and post/submit to the highscore board.
+
+- __Multiplayer__
+    To make the players able to challenge thier family, friends and collegues. 
 
 ## Technologies
 - __Languages__
@@ -71,7 +80,7 @@ The features on this page are coded in a way so the user can access all features
 
 ## Credit
 - __Code__
-    - In order to create a functional and good looking tab CSS i got inspiration from XXX
+    - In order to create a functional and good looking site I tried to create a basic and easy to read HTML and CSS code. 
 - __Content__
     - Text is written by myself.
 - __Media__
@@ -81,4 +90,5 @@ The features on this page are coded in a way so the user can access all features
     - Code institute tutor service has help me a lot when i was faceing issues with coding and design.
     - My mentor, Rohit Sharma, has been very helpful throughout the process of creating this project. 
 
+Enjoy the game!
 [See more of my work on GitHub](https://www.github.com/linushf)
