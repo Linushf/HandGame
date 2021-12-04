@@ -89,9 +89,10 @@ header {
 #reset {
     text-align: center;
     padding: 15px 15px;
+    display: none;
 }
 
-#reset-buttom:hover {
+#reset-button:hover {
     background-color: #8C5B49;
     cursor: pointer;
 }
