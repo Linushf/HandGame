@@ -25,7 +25,7 @@ As a player I want to access the game easyly so this game is created as a One-Cl
 
 - __Balsamiq__
     - In the start up/planning process I used balsamiq to create wireframes
-![wireframes](assets/images/.png "Wireframes created in Balsamiq")
+![wireframes](assets/images/wf1.png "Wireframes created in Balsamiq")
 
 ## Features
 The features on this page are coded in a way so the user can access all features without navigating away from the game. 
