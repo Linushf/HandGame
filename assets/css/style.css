@@ -16,7 +16,7 @@ body {
     background-color: #40282C;
 }
 
-/* Heading */
+/* Heading & Nav bar*/
 
 header {
     text-align: center;
@@ -25,9 +25,15 @@ header {
     color: #40282C;
 }
 
+#question-sign {
+        float: right;
+        color: #BF8C6F;
+}
+
 /* Result text area */
 
 .result-text {
+    clear: both;
     text-align: center;
     margin-top: 50px;
     color: #D9D8D2;
@@ -95,13 +101,6 @@ header {
 #reset-button:hover {
     background-color: #8C5B49;
     cursor: pointer;
-}
-
-/* Rules  */
-
-#question-sign {
-    float: right;
-    color: #D9D8D2;
 }
 
 /* Small screens */
