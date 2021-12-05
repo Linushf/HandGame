@@ -25,14 +25,14 @@ function playGame(userChoice) {
     resetButton();
     if (computerPick === userChoice) {
         console.log('Its a draw');
-    } else if (computerPick === 'paper' && userChoice === 'scissors', 
-        computerPick === 'scissors' && userChoice === 'rock',
-        computerPick === 'rock' && userChoice === 'paper') {
+    } else if ((computerPick === 'paper' && userChoice === 'scissors') ||
+        (computerPick === 'scissors' && userChoice === 'rock') || 
+        (computerPick === 'rock' && userChoice === 'paper')) {
         console.log('user win');
         incrementUserScore();
-    } else if (computerPick === 'rock' && userChoice === 'scissors',
-        computerPick === 'scissors' && userChoice === 'paper',
-        computerPick === 'paper' && userChoice === 'rock') {
+    } else if ((computerPick === 'rock' && userChoice === 'scissors') ||
+        (computerPick === 'scissors' && userChoice === 'paper') ||
+        (computerPick === 'paper' && userChoice === 'rock')) {
         console.log('Mysterion win');
         incrementComputerScore();
     }
@@ -59,6 +59,7 @@ function incrementComputerScore() {
 }
 
 // Reset score
+
 function resetButton() {
     let reset = document.getElementById('reset');
     reset.style.display = 'block';
