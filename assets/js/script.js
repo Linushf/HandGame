@@ -30,11 +30,13 @@ function playGame(userChoice) {
         (computerPick === 'rock' && userChoice === 'paper')) {
         console.log('user win');
         incrementUserScore();
+        alert('You Win!');
     } else if ((computerPick === 'rock' && userChoice === 'scissors') ||
         (computerPick === 'scissors' && userChoice === 'paper') ||
         (computerPick === 'paper' && userChoice === 'rock')) {
         console.log('Mysterion win');
         incrementComputerScore();
+        alert('Mr. Mysterion Win!');
     }
 }
 
