@@ -20,23 +20,24 @@ document.addEventListener("DOMContentLoaded", function() {
 // Game play
 
 function playGame(userChoice) {
-
+    popUp();
     let computerPick = getComputerChoice();
     resetButton();
     if (computerPick === userChoice) {
         console.log('Its a draw');
+        alert(`You both picked ${userChoice}. It's a draw!`);
     } else if ((computerPick === 'paper' && userChoice === 'scissors') ||
         (computerPick === 'scissors' && userChoice === 'rock') || 
         (computerPick === 'rock' && userChoice === 'paper')) {
         console.log('user win');
         incrementUserScore();
-        alert('You Win!');
+        alert(`Mysterions choosed ${computerPick} against your ${userChoice}. You Win!`);
     } else if ((computerPick === 'rock' && userChoice === 'scissors') ||
         (computerPick === 'scissors' && userChoice === 'paper') ||
         (computerPick === 'paper' && userChoice === 'rock')) {
-        console.log('Mysterion win');
+        console.log('Mysterion win!');
         incrementComputerScore();
-        alert('Mr. Mysterion Win!');
+        alert(`Mysterions choosed ${computerPick} against your ${userChoice}. You lose!`);
     }
 }
 
@@ -60,21 +61,29 @@ function incrementComputerScore() {
     document.getElementById("mscore").innerText = ++oldComputerScore;
 }
 
-// Reset score
+// Reset score and display reset button
 
 function resetButton() {
     let reset = document.getElementById('reset');
     reset.style.display = 'block';
-    
-    reset.addEventListener('click', function() {
+}
+
+reset.addEventListener('click', function() {
     let ok = confirm('Do you really want to reset the game?');
         if (ok == true) {
         document.getElementById("uscore").innerText = 0;
         document.getElementById("mscore").innerText = 0;
+        reset.style.display = 'none';
       } else {
-        alert(`Let's continue!`);
+        alert(`Let's continue, you can do it!`);
       }
     })
-}
 
-// Pop-ups
+// Pop-up message
+
+function popUp() {
+    let pop = document.createElement('div');
+    pop.setAttribute('id', 'popmodal');
+    document.body.appendChild(pop);
+    pop.textContent = "Test test";
+}
