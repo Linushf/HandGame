@@ -111,10 +111,17 @@ header {
 #rules {
     display: none;
     float: right;
+    width: 30%;
     font-size: 10px;
     background-color: #D9D8D2;
     color: #40282C;
     margin-top: 5px;
+}
+
+/* Pop-up result */
+#popmodal {
+    width: 100%;
+    height: 100%;
 }
 
 /* Small screens */

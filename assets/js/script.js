@@ -20,8 +20,9 @@ document.addEventListener("DOMContentLoaded", function() {
 // Game play
 
 function playGame(userChoice) {
-    popUp();
+
     let computerPick = getComputerChoice();
+    let result = document.getElementsByClassName('result-text');
     resetButton();
     if (computerPick === userChoice) {
         console.log('Its a draw');
@@ -37,7 +38,7 @@ function playGame(userChoice) {
         (computerPick === 'paper' && userChoice === 'rock')) {
         console.log('Mysterion win!');
         incrementComputerScore();
-        alert(`Mysterions choosed ${computerPick} against your ${userChoice}. You lose!`);
+        result.innerHTML = `Mysterion choosed ${computerPick} against your ${userChoice}. You lose!`;
     }
 }
 
@@ -85,7 +86,7 @@ function popUp() {
     let pop = document.createElement('div');
     pop.setAttribute('id', 'popmodal');
     document.body.appendChild(pop);
-    pop.textContent = "Test test";
+    pop.textContent = "<h2>Mysterion</h2>";
 }
 
 // Rules icon
