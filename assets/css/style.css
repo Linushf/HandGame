@@ -106,6 +106,17 @@ header {
     cursor: pointer;
 }
 
+/* Rules pup-up */
+
+#rules {
+    display: none;
+    float: right;
+    font-size: 10px;
+    background-color: #D9D8D2;
+    color: #40282C;
+    margin-top: 5px;
+}
+
 /* Small screens */
 
 @media(max-width: 530px) {

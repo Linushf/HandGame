@@ -87,3 +87,13 @@ function popUp() {
     document.body.appendChild(pop);
     pop.textContent = "Test test";
 }
+
+// Rules icon
+
+let icon = document.getElementById('question-sign');
+    icon.onmouseover = function() {
+    document.getElementById('rules').style.display = 'block';
+}
+    icon.onmouseout = function() {
+    document.getElementById('rules').style.display = 'none';
+}
