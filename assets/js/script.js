@@ -17,37 +17,46 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 })
 
-// Game play
-
-function playGame(userChoice) {
-
-    let computerPick = getComputerChoice();
-    let result = document.getElementsByClassName('result-text');
-    resetButton();
-    if (computerPick === userChoice) {
-        console.log('Its a draw');
-        alert(`You both picked ${userChoice}. It's a draw!`);
-    } else if ((computerPick === 'paper' && userChoice === 'scissors') ||
-        (computerPick === 'scissors' && userChoice === 'rock') || 
-        (computerPick === 'rock' && userChoice === 'paper')) {
-        console.log('user win');
-        incrementUserScore();
-        alert(`Mysterions choosed ${computerPick} against your ${userChoice}. You Win!`);
-    } else if ((computerPick === 'rock' && userChoice === 'scissors') ||
-        (computerPick === 'scissors' && userChoice === 'paper') ||
-        (computerPick === 'paper' && userChoice === 'rock')) {
-        console.log('Mysterion win!');
-        incrementComputerScore();
-        result.innerHTML = `Mysterion choosed ${computerPick} against your ${userChoice}. You lose!`;
-    }
-}
-
 // Calculate a random choice from computer
 
 function getComputerChoice() {
     let pick = ['rock', 'paper', 'scissors'];
     let randomNumber = Math.floor(Math.random() * 3);
     return pick [randomNumber];
+}
+
+// Game play
+
+function playGame(userChoice) {
+
+    let computerPick = getComputerChoice();
+    
+    resetButton();
+    if (computerPick === userChoice) {
+        console.log('Its a draw');
+        document.getElementById('user-chioce').innerHTML = "";
+        document.getElementById('mysterion-chioce').innerHTML = "";
+        document.getElementById('result-text').innerHTML = `You both picked ${userChoice}. It's a draw!`;
+        document.getElementById('result-text').style.color = "#D9D8D2";
+    } else if ((computerPick === 'paper' && userChoice === 'scissors') ||
+        (computerPick === 'scissors' && userChoice === 'rock') || 
+        (computerPick === 'rock' && userChoice === 'paper')) {
+        console.log('user win');
+        incrementUserScore();
+        document.getElementById('user-chioce').innerHTML = "";
+        document.getElementById('mysterion-chioce').innerHTML = "";
+        document.getElementById('result-text').innerHTML = `Mysterions choosed ${computerPick} against your ${userChoice}. You Win!`;
+        document.getElementById('result-text').style.color = "#7C96A6";
+    } else if ((computerPick === 'rock' && userChoice === 'scissors') ||
+        (computerPick === 'scissors' && userChoice === 'paper') ||
+        (computerPick === 'paper' && userChoice === 'rock')) {
+        console.log('Mysterion win!');
+        incrementComputerScore();
+        document.getElementById('user-chioce').innerHTML = "";
+        document.getElementById('mysterion-chioce').innerHTML = "";
+        document.getElementById('result-text').innerHTML = `Mysterion choosed ${computerPick} against your ${userChoice}. You lose!`;
+        document.getElementById('result-text').style.color = "red";
+    }
 }
 
 // Incrementing the scores
@@ -75,19 +84,12 @@ reset.addEventListener('click', function() {
         document.getElementById("uscore").innerText = 0;
         document.getElementById("mscore").innerText = 0;
         reset.style.display = 'none';
+        document.getElementById('result-text').innerHTML = `Let's see if you can beat him this time!`;
+        document.getElementById('result-text').style.color = "#D9D8D2";
       } else {
         alert(`Let's continue, you can do it!`);
       }
     })
-
-// Pop-up message
-
-function popUp() {
-    let pop = document.createElement('div');
-    pop.setAttribute('id', 'popmodal');
-    document.body.appendChild(pop);
-    pop.textContent = "<h2>Mysterion</h2>";
-}
 
 // Rules icon
 

@@ -32,7 +32,7 @@ header {
 
 /* Result text area */
 
-.result-text {
+#result-text {
     clear: both;
     text-align: center;
     margin-top: 50px;
@@ -110,8 +110,7 @@ header {
 
 #rules {
     display: none;
-    float: right;
-    width: 30%;
+    text-align: center;
     font-size: 10px;
     background-color: #D9D8D2;
     color: #40282C;
@@ -133,5 +132,9 @@ header {
     header {
         font-size: 10px;
     }
+    nav {
+        display: none;
+    }
+
 }
 
