@@ -33,7 +33,6 @@ function playGame(userChoice) {
     
     resetButton();
     if (computerPick === userChoice) {
-        console.log('Its a draw');
         document.getElementById('user-chioce').innerHTML = "";
         document.getElementById('mysterion-chioce').innerHTML = "";
         document.getElementById('result-text').innerHTML = `You both picked ${userChoice}. It's a draw!`;
@@ -41,7 +40,6 @@ function playGame(userChoice) {
     } else if ((computerPick === 'paper' && userChoice === 'scissors') ||
         (computerPick === 'scissors' && userChoice === 'rock') || 
         (computerPick === 'rock' && userChoice === 'paper')) {
-        console.log('user win');
         incrementUserScore();
         document.getElementById('user-chioce').innerHTML = "";
         document.getElementById('mysterion-chioce').innerHTML = "";
@@ -50,7 +48,6 @@ function playGame(userChoice) {
     } else if ((computerPick === 'rock' && userChoice === 'scissors') ||
         (computerPick === 'scissors' && userChoice === 'paper') ||
         (computerPick === 'paper' && userChoice === 'rock')) {
-        console.log('Mysterion win!');
         incrementComputerScore();
         document.getElementById('user-chioce').innerHTML = "";
         document.getElementById('mysterion-chioce').innerHTML = "";

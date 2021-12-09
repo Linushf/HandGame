@@ -8,6 +8,7 @@
 * [Features](#features)
 * [Technologies](#technologies)
 * [Testing](#testing)
+* [Deployment](#deployment)
 * [Credit](#credit)
 
 
@@ -19,7 +20,7 @@ Socially this game can be used to decide who will make dinner in a "best out of 
 
 This page is a milestone project to become a Full Stack Developer. The course is provided by [Code Inistitute](https://codeinstitute.net/).
 
-![Responsice Mockup](assets/images/amiresp.png "Resonsive mockup picture")
+![Responsice Mockup](docs/screenshot/amiresp.png "Resonsive mockup picture")
 
 ## User Stories
 
@@ -27,7 +28,7 @@ As a player, I want to access the game easily so this game is created as a one-C
 
 - __Balsamiq__
     - In the start-up/planning process I used Balsamiq to create wireframes
-![wireframes](assets/images/mywiref.png "Wireframes created in Balsamiq")
+![wireframes](docs/wireframes/mywiref.png "Wireframes created in Balsamiq")
 
 ## Features
 The features on this page are coded in a way so the user can access all features without navigating away from the game. 
@@ -37,23 +38,23 @@ The features on this page are coded in a way so the user can access all features
 
     The header is only containing the title of the game and has a contrast that is making it easy to read. 
 
-    ![Heading](assets/images/heading.png "Header")
+    ![Heading](docs/screenshot/heading.png "Header")
 - __Landing Page__
 
     The landing page is the main game page. Easy access and ready to play. The page has a lot of interactive features such as a reset button that is displayed when the game is initialized, a scoreboard that shows who is in the lead, a text that explains who won the round, and a "Rules ?" - text that will display a textbox that explains the basic rules. 
-    ![Landing page](assets/images/landing.png "Landing page")
+    ![Landing page](docs/screenshot/landing.png "Landing page")
 
 - __Game Options__
 
     The page shows all three hand signs that are required for gameplay. User clicks on the icon that represents their choice. and a text is explaining whos has won that round. The text will be blue if the user won and red if the computer has won. 
 
-    ![Game options](assets/images/choices.png "Print screen of the game options")
+    ![Game options](docs/screenshot/choices.png "Print screen of the game options")
 
 - __Score__
 
     The scoreboard is counting the current score and the avatar symbol helps the user to identify with the score belongs to who. To make it clear the computer avatar is red colored and the user avatar light blue. When the game is initialized a reset button appears and when clicked the user will be asked "Are you sure?" if the answer is "yes" the game will be reset to 0:0 and the result text will change to "Let's see if you can beat him this time!". The reset button is now hidden but reappears whenever a new game is initialized. If the user answers "no" to the "are you sure?"-question the game will continue without any changes. 
 
-    ![Score](assets/images/score.png "Shows the current score")
+    ![Score](docs/screenshot/score.png "Shows the current score")
 
 ### Future Features
 
@@ -83,25 +84,34 @@ The features on this page are coded in a way so the user can access all features
 - __Validator__
     - HTML - WC3 - no errors were returned when passing through the official W3C Validator.
 
-    ![W3C validator test](assets/images/w3chtml.png "W3C HTML validator test")
+    ![W3C validator test](docs/screenshot/w3chtml.png "W3C HTML validator test")
 
     - CSS - Jigsaw - no errors were returned when passing through the official (jigsaw) Validator.
 
-    ![W3C validator test](assets/images/w3ccss.png "W3C CSS validator test")
+    ![W3C validator test](docs/screenshot/w3ccss.png "W3C CSS validator test")
 
     - JSHint - the code passed through the code analysis tool JSHint with no significant issues. 17 warnings that are not relevant for this project.
 
-    ![W3C validator test](assets/images/jshint.png "JSHint test")
+    ![W3C validator test](docs/screenshot/jshint.png "JSHint test")
 
     - Accessibility - I generated a report in devtool lighthouse to make sure that colors and fonts are easy to read and accessible.
     
     
-    ![W3C validator test](assets/images/lighthouse.png "Lighthouse test")
+    ![W3C validator test](docs/screenshot/lighthouse.png "Lighthouse test")
 
 - __Browsers__
     - I have tested that this page works, with no errors, when using different web browsers such as Safari, Chrome, Firefox, and Edge. 
+
+- __Bugs__
+    - I ran into many bugs that mostly came from syntax errors. One bug I worked with for a long time was the result test. It wouldn't change when i used getElementByClassName but worked when changing it to getElementById. Problem was fixed.
+
 - __Responsiveness__ 
-    - I have confirmed that the design is responsive and all functions work on different screen sizes. 
+    - I have confirmed that the design is responsive and all functions work on different screen sizes. Since the page consists of mostly JS, I did not have to change much to make it work on smaller screen devices but the hover Rules are non-displayed on mobile devices
+    ![Screenshots Ipad/Iphone screens](docs/screenshot/iphoneipad.png "Small devices screenshot")
+## Deployment
+
+- __Gitpod__
+    - This site was deployed to GitHub pages. When viewing the repoitory I pushed 'settings' and 'pages'. From the dropdown menu I selected 'main' and pushed 'save'-button. Here is the live link [Veiw the project here](https://linushf.github.io/HandGame/)
 
 ## Credit
 - __Code__
