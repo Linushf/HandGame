@@ -8,14 +8,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     rock.addEventListener('click', function() {
     playGame('rock');
-    })
+    });
     paper.addEventListener('click', function() {
     playGame('paper');
-    })
+    });
     scissors.addEventListener('click', function() {
     playGame('scissors');
-})
-})
+});
+});
 
 // Calculate a random choice from computer
 
@@ -89,14 +89,14 @@ reset.addEventListener('click', function() {
       } else {
         alert(`Let's continue, you can do it!`);
       }
-    })
+    });
 
 // Rules icon
 
 let icon = document.getElementById('question-sign');
     icon.onmouseover = function() {
     document.getElementById('rules').style.display = 'block';
-}
+};
     icon.onmouseout = function() {
     document.getElementById('rules').style.display = 'none';
-}
+};
